@@ -4,11 +4,20 @@ install:
     - pip install mkdocs-material
     - pip install pygments
 
-script:
+branches:
+  only:
+    - master
 
+script: mkdocs build
+
+env:
+    global:
+        - secure: DpBicgFksWT9cn99olgvl2YJpz16I/pYGKdal4PqhAYefwujh7ki6OlpEAX4zFD7vGCkkSr/xt0dc6W22lghHIbQ01jNHKAPb7ebv3S0Hs6laVBdvXq/LNtbYs8UKgpemwXKX4QFVZv+op4KyGzAM8qTGS9uxCUkOnDOOZJk6Xp46q9X7wpLkxrmAp0qBVd9c5qd0pNdVwE66e4+mvMB0ztrDzgSQhdqm3ViBxYScYK8t+DSkcUfLeKIS6IpWBzzw1Vf8ZRPgucZjQnXda34sCvyVKE6/Uj+auwLndfTle2dYDh7YeG9SbnxFXy0GfgXy7yobUTKXam1ND0l1cFa1PJ+r0A4gftRVUMChAXL+XibiEwlEBuIqxM2UtzVhVYFisRpbJmYEu+fqZg84DaaCdQDYrIcqvTFpbt36buZbIO1d1qi5nmCMeO95pCSJ5c4qwcP3wMTXXbKi6yBr8cof1Tne+wiAnBGmtUS1HVtTqwp61tna+qm3iq6swTsoIOy/OOPsYA6b3LM3kol28EXGTBLSxCNIeNT+BRGMu4Q737tIWWXsPXrFPqBd+uQuA8sklzx6UnEyF2/corcYDUeL53xaJXcpdb53sKIeJO13TwL8zWGiuoNESY2SC42140rn+J/QxSqsMQ1ZFTLAZeG5b+bQnMw6CO8fw0xBsDjAwU=
 
 after_success:
-    - mkdocs gh-deploy --clean
-
-matrix:
-    fast_finish: true
+    - git config --global user.name "Travis CI"
+    - git config --global user.email "ci@travis-ci.org"
+    - git remote add app-enhance.github.io "https://${GH_TOKEN}@github.com/app-enhance/app-enhance.github.io.git"
+    - git fetch app-enhance.github.io
+    - pip install mkdocs -U;
+    - mkdocs gh-deploy -v
