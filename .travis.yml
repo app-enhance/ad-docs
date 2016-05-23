@@ -1,0 +1,14 @@
+language: python
+install:
+    - pip install mkdocs
+    - pip install mkdocs-material
+    - pip install pygments
+
+script:
+
+
+after_success:
+    - mkdocs gh-deploy --clean
+
+matrix:
+    fast_finish: true
