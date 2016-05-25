@@ -1,4 +1,4 @@
-site_name: app-enhance docs
+site_name: App-Enhance docs
 site_description: 'Documentation for app-enhance projects'
 site_author: 'Wojciech Gadziński'
 site_url: 'https://app-enhance.github.io'
@@ -10,11 +10,8 @@ theme: 'material'
 
 extra:
   palette:
-    primary: 'indigo'
-    accent: 'light blue'
-  font:
-    text: 'Roboto'
-    code: 'Roboto Mono'
+    primary: 'deep orange'
+    accent: 'blue grey'
 
 markdown_extensions:
   - codehilite(css_class=code)
