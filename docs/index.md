@@ -1,8 +1,9 @@
-# Welcome to App-Enhance's documentation!
+# *Welcome to App-Enhance's documentation!*
 
 [App-Enhance](https://github.com/app-enhance) is a set of boilerplate/extensions libraries for any .Net application. All code is based on [.Net Core](https/dot.net) and .NETStandard Library 1.5. It tries to cover and simplify many common use cases which you can encounter when you create real applications. They are dependency injection, events, messaging, transactions and persistance. 
 
-The main rules are:
+## The main rules are:
+
 * Simplicity of code
 * Extensiblity
 * Less coupling
@@ -10,8 +11,6 @@ The main rules are:
 * Very lightwight 
 
 ## Project structure
-
-Whole project consist from several areas
 
 | Area                 | Repository                                        | Packages                                                                         |
 |----------------------|---------------------------------------------------|----------------------------------------------------------------------------------|
