@@ -1,7 +1,4 @@
 # AE.Extensions.DependencyInjection
-[![Build Status](https://travis-ci.org/app-enhance/ae-di.svg?branch=master)](https://travis-ci.org/app-enhance/ae-di)
-[![Build status](https://ci.appveyor.com/api/projects/status/s5ej8f3uechsx3gs/branch/master?svg=true)](https://ci.appveyor.com/project/Ermesx/ae-di/branch/master)
-[![app-enhance-dev MyGet Build Status](https://www.myget.org/BuildSource/Badge/app-enhance-dev?identifier=891bb83e-b009-4793-b622-495a6eab6afc)](https://www.myget.org/gallery/app-enhance-dev)
 
 This is an extension library for `Microsoft.Extensions.DependencyInjection` which provides you with a declarative way to pick out lifetime of services and register them in just a few lines.
 
@@ -13,6 +10,7 @@ When you want to register a service (create dependency) in `IServiceCollection` 
 * Lifetime scope
 
 Ususally it should look like this (see below)
+
 ```c#
 // Method ex. in Startup.cs
 // doc: http://docs.asp.net/en/latest/fundamentals/dependency-injection.html
@@ -78,6 +76,7 @@ public interface INotRegisterDependency
 {
 }
 ```
+
 ## Goals/Features
 
 - [x] [Declarative way of defining lifetime scope](https://github.com/app-enhance/ae-di#how-does-it-work)
@@ -96,6 +95,7 @@ public interface INotRegisterDependency
 In order to use this approach you have to do two things:
 
 * Select dependency interface and inherit
+
 ```c#
 // It will be registered as a 
 // new ServiceDescriptor(typeof(IBankManager), typeof(BankManager), ServiceLifetime.Transient);
@@ -115,6 +115,7 @@ public class BankManager : IBankManager
 }
 ```
 * Use extensions methods for `IServiceCollection` or `ServiceDescriptorsBuilder` to retrieve all dependencies from assemblies (see below)
+
 ```c#
 public void ConfigureServices(IServiceCollection services)
 {
@@ -130,6 +131,7 @@ There are many custom ways to use service description builder. Most cases descri
 
 ### Repleace service
 There is possible to override implementaion of service (decorate) which was registered. You can do that by `RepleaceServiceAttribute` (see exapmle below)
+
 ```c#
 [RepleaceService(typeof(BankManager))]
 public class AuditBankManager : BankManager
