@@ -13,6 +13,9 @@ extra:
     accent: 'blue grey'
 
 markdown_extensions:
+  - wikilinks
+  - nl2b
+  - sane_lists
   - codehilite(css_class=code)
   - admonition
   - toc:
