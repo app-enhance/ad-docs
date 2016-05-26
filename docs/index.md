@@ -14,7 +14,7 @@
 
 | Area                 | Repository                                        | Packages                                                                         |
 |----------------------|---------------------------------------------------|----------------------------------------------------------------------------------|
-| Dependency injection | [ae-di](https://github.com/app-enhance/ae-di)     | AE.Extensions.DependencyInjection.Abstractions AE.Extensions.DependencyInjection |
+| Dependency injection | [ae-di](https://github.com/app-enhance/ae-di)     | AE.Extensions.DependencyInjection.Abstractions  AE.Extensions.DependencyInjection |
 | Events               | [ae-core](https://github.com/app-enhance/ae-core) | ?                                                                                |
 | Transactions         | [ae-core](https://github.com/app-enhance/ae-core) | ?                                                                                |
 | Messaging            | [ae-core](https://github.com/app-enhance/ae-core) | ?                                                                                |
