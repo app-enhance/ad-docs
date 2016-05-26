@@ -14,7 +14,7 @@ extra:
 
 markdown_extensions:
   - wikilinks
-  - nl2b
+  - nl2br
   - sane_lists
   - codehilite(css_class=code)
   - admonition
