@@ -1,4 +1,4 @@
-site_name: App-Enhance docs
+site_name: App-Enhance
 site_description: 'Documentation for app-enhance projects'
 site_author: 'Wojciech Gadziński'
 site_url: 'https://app-enhance.github.io'
@@ -8,13 +8,15 @@ repo_url: 'https://github.com/app-enhance/ae-docs'
 theme: 'material'
 
 extra:
+  logo: images/logo.png
+  author:
+    github: ermesx
   palette:
-    primary: 'deep orange'
+    primary: 'teal'
     accent: 'blue grey'
 
 markdown_extensions:
   - wikilinks
-  - nl2br
   - sane_lists
   - codehilite(css_class=code)
   - admonition
