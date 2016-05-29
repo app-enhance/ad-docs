@@ -24,7 +24,7 @@ The sake project is available here: https://github.com/sakeproject/sake
 
 The `var` keyword is to be used as much as the compiler will allow.
 
-!!! note "They are correct:"
+!!! note "This is correct:"
 
 ```csharp
 var fruit = "Lychee";
@@ -45,7 +45,7 @@ FruitFlavor flavor = fruit.GetFlavor();
 
 When using a type that has a csharp keyword the keyword is used in favor of the .NET type name.
 
-!!! note "They are correct:"
+!!! note "This is correct:"
 
 ```csharp
 public string TrimString(string s)
@@ -73,7 +73,7 @@ public String TrimString(String s)
 
 Public namespaces, type names, member names, and parameter names must use complete words or common/standard abbreviations.
 
-!!! note "They are correct:"
+!!! note "This is correct:"
 ```csharp
 public void AddReference(AssemblyReference reference);
 public EcmaScriptObject SomeObject { get; }
@@ -202,7 +202,7 @@ Test class names end with `Test` and live in the same namespace as the class bei
 
 Unit test method names must be descriptive about *what is being tested*, *under what conditions*, and *what the expectations are*. Pascal casing and underscores can be used to improve readability. The following test names are correct:
 
-!!! note "They are correct:"
+!!! note "This is correct:"
 
 ```
 PublicApiArgumentsShouldHaveNotNullAnnotation
@@ -281,7 +281,7 @@ for (int i = 0; i < list1.Length; i++)
     Assert.True(String.Equals, list1[i], list2[i], StringComparison.OrdinalIgnoreCase));
 }
 ```
-!!! note "They are good:"
+!!! note "This is good:"
 
 ```csharp
 Assert.True(someBool);
