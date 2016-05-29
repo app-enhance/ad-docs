@@ -20,5 +20,6 @@ Please follow navigation co read documentation.
 The main rules which ennoble libraries created in this project are: **simplicity of code**, **extensibility**, **Less coupling**, **IoC based**
 and **very lightweight**
 
-## Contribute
-Before pushing new feature or improvement please read [[Contributing]]
+## Get involved
+If you have an interesting idea, any suggestions or bug report please add issue/PR to specific repository
+but before pushing new feature or improvement please read [[Contributing]]
