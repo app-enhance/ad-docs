@@ -3,6 +3,7 @@ install:
     - pip install mkdocs
     - pip install mkdocs-material
     - pip install pygments
+    - pip install pymdown-extensions
 
 branches:
   only:

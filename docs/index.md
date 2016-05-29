@@ -10,7 +10,7 @@ Please follow navigation co read documentation.
 
 | Area                 | Repository                                        | Packages                                                                         |
 |----------------------|---------------------------------------------------|----------------------------------------------------------------------------------|
-| Dependency injection | [ae-di](https://github.com/app-enhance/ae-di)     | AE.Extensions.DependencyInjection.Abstractions <br/> AE.Extensions.DependencyInjection |
+| [Dependency injection](dependency-injection/getting-started) | [ae-di](https://github.com/app-enhance/ae-di)     | AE.Extensions.DependencyInjection.Abstractions <br/> AE.Extensions.DependencyInjection |
 | Events               | [ae-core](https://github.com/app-enhance/ae-core) | ?                                                                                |
 | Transactions         | [ae-core](https://github.com/app-enhance/ae-core) | ?                                                                                |
 | Messaging            | [ae-core](https://github.com/app-enhance/ae-core) | ?                                                                                |
@@ -19,3 +19,6 @@ Please follow navigation co read documentation.
 
 The main rules which ennoble libraries created in this project are: **simplicity of code**, **extensibility**, **Less coupling**, **IoC based**
 and **very lightweight**
+
+## Contribute
+Before pushing new feature or improvement please read [[Contributing]]

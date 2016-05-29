@@ -20,8 +20,20 @@ markdown_extensions:
   - sane_lists
   - codehilite(css_class=code)
   - admonition
+  - pymdownx.tasklist
+  - pymdownx.magiclink
   - toc:
       permalink: '#'
 
 remote_branch: master
 remote_name: app-enhance.github.io
+
+pages:
+    - Home: index.md
+    - Dependency injection:
+        - Getting started: dependency-injection/getting-started.md
+        - Features: dependency-injection/features.md
+        - Customizations: dependency-injection/customizations.md
+        - Integrations: dependency-injection/integrations.md
+        - Roadmap: dependency-injection/roadmap.md
+    - Contributing: contributing.md
